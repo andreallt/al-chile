@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<!-- CODENAME: BANANA -->
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+Al Chile
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Al Chile ("To Pepper") is an app about all things peppers and hot sauce. Want to learn about all the different types of peppers? What makes them spicy and, what hot sauces have that specific pepper? Just use the app and collaborate to add more hot sauces from around the world.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
+Wireframes below are Al Chile app interface variations for phone, tablet, and desktop. Note: final frames may change due to content and usage. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a href="https://miro.com/app/board/o9J_lFxEZQE=/"> Go to Miro details on Wireframes </a>
 
-### `npm test`
+## Component Hierarchy
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lFxEZQE=/?moveToViewport=-2492,-244,4526,5508" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API and Data Sample
+*WIP*
+Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-### `npm run build`
+### MVP/PostMVP
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### MVP 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create a useful Airtable database 
+- Render main page with clickable navegation to display content
+- Make API calls and be able to add objects using forms
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### PostMVP  
 
-### `npm run eject`
+- Create a poll page to build an active community
+- Add images and video
+- Create a salsa recipe forum
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Schedule
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+|  Day | Deliverable | Status
+|---|---| ---|
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|July 13| Project Approval | Incomplete
+|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 14| Pseudocode / actual code | Incomplete
+|July 15| Initial Clickable Model  | Incomplete
+|July 16| MVP | Incomplete
+|July 17| Presentations | Incomplete
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Timeframes
 
-## Learn More
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## SWOT Analysis
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Strengths:
+Creating the database content and obtaining the necessary information. Developing the wireframes and understanding CSS.
 
-### Code Splitting
+### Weaknesses:
+Narrowing down tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Opportunities:
 
-### Analyzing the Bundle Size
+Expand my React knowledge and use the class curriculum to build something from scratch. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
+Overcomplicating, trying to accomplish too many tasks.
