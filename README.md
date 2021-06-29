@@ -28,43 +28,17 @@ Wireframes below are Al Chile app interface variations for mobile, tablet, and d
  HOT SAUCE:
  ```json
 {
-    "records": [
-        {
-            "id": "recqIUYqDshFWlox2",
-            "fields": {
-                "sauce": "Mad Dog 357 Plutonium",
-                "peppers": "Oleoresin capsicum",
-                "hotLevels": 5,
-                "shu": "9,000,000",
-                "image": [
-                    {
-                        "id": "attlgDDpJr5dgqeX9",
-                        "url": "https://dl.airtable.com/.attachments/97c466ef03362ec84d49aac17d755ee3/e8c7bc1f/41ammQpOUyL._SX300_SY300_QL70_FMwebp_.jpg",
-                        "filename": "41ammQpOUyL._SX300_SY300_QL70_FMwebp_.jpg",
-                        "size": 9010,
-                        "type": "image/webp",
-                        "thumbnails": {
-                            "small": {
-                                "url": "https://dl.airtable.com/.attachmentThumbnails/99f1096330a65dd4ab5d1f185c193090/4b4b6252.png",
-                                "width": 36,
-                                "height": 36
-                            },
-                            "large": {
-                                "url": "https://dl.airtable.com/.attachmentThumbnails/18ff04cf8230e4cf3a522e0906b12101/6990fa74.png",
-                                "width": 300,
-                                "height": 300
-                            },
-                            "full": {
-                                "url": "https://dl.airtable.com/.attachmentThumbnails/7f647ed83b90350b780cd7f7b11085a2/3c7c4669.png",
-                                "width": 3000,
-                                "height": 3000
-                            }
-                        }
-                    }
-                ]
-            },
-            "createdTime": "2021-06-29T14:21:06.000Z"
-        },
+    "id": "recqIUYqDshFWlox2",
+    "fields": {
+        "peppers": "Oleoresin capsicum",
+        "hotLevels": 5,
+        "shu": 9000000,
+        "image": "41ammQpOUyL._SX300_SY300_QL70_FMwebp_.jpg (https://dl.airtable.com/.attachments/97c466ef03362ec84d49aac17d755ee3/e8c7bc1f/41ammQpOUyL._SX300_SY300_QL7...",
+        "sauce": "Mad Dog 357 Plutonium",
+        "pairing": "WARNING - DO NOT CONSUME DIRECTLY - FOOD ADDITIVE ONLY!"
+    },
+    "createdTime": "2021-06-29T14:21:06.000Z"
+}
  ```
  
  
