@@ -10,25 +10,25 @@ function toggle() {
   : setShowMore(false)
 }
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  peppers.setPeppers(showMore);
-  shu.setShu(showMore);
-  pairing.setPairing(showMore);
-  setShowMore(true);
-}
-
   return(
     <article>
-    <h2>{sauce}</h2>
+    <h2 style={{
+        margin: "0",
+        fontFamily: "Red Hat Text, sans-serif",
+        textAlign: "center",
+       }}>{sauce}</h2>
     <Heat hotLevels={hotLevels} />
-    <img src={image} alt={sauce}></img>
-    <button type="button" onClick={toggle}>Show More</button>
-      {showMore === true ?(
-    <div>
-    <p>{peppers}</p>
-    <p>{shu}</p>
+    <img onClick={toggle}
+      src={image} alt={sauce}></img>
+    
+    {showMore === true ?(
+    <div className="info">
+    <h3>Great on:</h3>
     <p>{pairing}</p>
+    <h3>Scoville Heat Units:</h3>
+    <p>{shu}</p>
+    <h3>Peppers:</h3>
+    <p>{peppers}</p>
     </div> ):(""
       )}
     </article>

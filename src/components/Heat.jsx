@@ -7,7 +7,10 @@ for(let i = 0; i < props.hotLevels; i+= 1){
 }
   //render broken hearts
 return(
-  <p> {heat} </p>
+  <p style={{
+   margin: "0",
+  }}>
+    {heat} </p>
 )
 }
 
