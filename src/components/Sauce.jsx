@@ -1,24 +1,36 @@
-import { Link } from 'react-router-dom';
-import axios from "axios";
-import { baseURL, config} from "../services"
+import { useState } from 'react';
+import Heat from './Heat';
 
 function Sauce(props){
 const { sauce, peppers, shu, hotLevels, image, pairing } = props.hotSauce.fields;
+const [showMore, setShowMore] = useState(false);
 
-const deleteSnack = async () => {
-  const hotURL = `${baseURL}/${props.hotSauce.id}`;
-  await axios.delete(hotURL, config);
-  props.setToggleFetch ((curr) => !curr);
+function toggle() {
+  (showMore === false) ? setShowMore(true)
+  : setShowMore(false)
+}
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  peppers.setPeppers(showMore);
+  shu.setShu(showMore);
+  pairing.setPairing(showMore);
+  setShowMore(true);
 }
 
   return(
     <article>
-    <h3>{sauce}</h3>
+    <h2>{sauce}</h2>
+    <Heat hotLevels={hotLevels} />
+    <img src={image} alt={sauce}></img>
+    <button type="button" onClick={toggle}>Show More</button>
+      {showMore === true ?(
+    <div>
     <p>{peppers}</p>
     <p>{shu}</p>
-    <p>{hotLevels}</p>
-    <img src={image} alt={sauce}></img>
     <p>{pairing}</p>
+    </div> ):(""
+      )}
     </article>
   )
 }

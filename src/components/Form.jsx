@@ -14,7 +14,6 @@ function Form(props) {
   const history = useHistory();
 
   useEffect(() => {
-   // if there is an ID in the url, and snackes is longer than 0
    if( params.id && props.hotSauces.length > 0){
      const sauceToEdit = props.hotSauces.find((hotSauce) => hotSauce.id === params.id);
      if (sauceToEdit) {

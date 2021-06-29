@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"; 
 import { baseURL, config } from './services';
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import axios from "axios";
 import Sauce from './components/Sauce';
 import Form from './components/Form';
@@ -22,17 +22,20 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-    <Link to="/">Al Chile</Link>
-     <Link to="/new"> Hot Sauce </Link>
-     </nav>
+
+    <Nav/>
+
      <Route exact path="/">
         <main>
           {hotSauces.map((hotSauce) => (
             <Sauce key={hotSauce.id} hotSauce={hotSauce} setToggleFetch={setToggleFetch}/> ))}
         </main>
       </Route>
-  
+
+      <Route path="/new">
+      <Form setToggleFetch={setToggleFetch}/>
+      </Route>
+
     </div>
   );
 }
