@@ -19,7 +19,7 @@ function toggle() {
         textAlign: "center",
        }}>{sauce}</h2>
     <img onClick={toggle}
-      src={image} alt={sauce}></img>
+      src={image} alt={sauce}/>
     
     {showMore === true ?(
     <section className="info-box">

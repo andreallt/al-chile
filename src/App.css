@@ -44,6 +44,13 @@ p{
   padding: 0;
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 20vh auto;
+  width: 80vw;
+}
+
 .info{
   display: flex;
   justify-content: center;
@@ -59,9 +66,25 @@ p{
   padding: 20px;
 }
 
-.sauce{
-    margin: 0;
-    font-family: "Red Hat Text, sans-serif";
-    text-align: center;
-    align-items: center;
+label{
+    margin: 10px 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+input{
+  font-family: c;
+
+}
+
+button{
+  background-color:rgb(29, 29, 29);
+  color:white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+  padding: 7px;
 }
