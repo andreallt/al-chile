@@ -1,9 +1,7 @@
 <!-- CODENAME: BANANA -->
 # Project Overview
 
-## Project Name
-
-Al Chile
+## Al Chile
 
 ## Project Description
 
