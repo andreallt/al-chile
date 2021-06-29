@@ -12,10 +12,10 @@ Al Chile ("To Pepper") is an app about all things peppers and hot sauce. Want to
 ## Wireframes
 Wireframes below are Al Chile app interface variations for phone, tablet, and desktop. Note: final frames may change due to content and usage. 
 
-<a href="https://miro.com/app/board/o9J_lFxEZQE=/"> Go to Miro details on Wireframes </a>
+<a href="https://miro.com/app/board/o9J_lFxEZQE=/"> Go to MIRO for details on Wireframes </a>
 
 ## Component Hierarchy
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lFxEZQE=/?moveToViewport=-2492,-244,4526,5508" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+
 
 ## API and Data Sample
 *WIP*
