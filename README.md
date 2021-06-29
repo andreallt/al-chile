@@ -11,13 +11,13 @@ Al Chile ("To Pepper") is an app about all things peppers and hot sauce. Want to
 Wireframes below are Al Chile app interface variations for mobile, tablet, and desktop. Note: final frames may change due to content and usage. 
 
 <h3>Mobile:</h3>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/0FQFMyk/Screen-Shot-2021-06-28-at-11-12-26-PM.png" alt="Screen-Shot-2021-06-28-at-11-12-26-PM" border="0"></a>
+<a href="https://ibb.co/gv6h0Kt"><img src="https://i.ibb.co/285Hz4c/Screen-Shot-2021-06-29-at-11-10-27-AM.png" alt="Screen-Shot-2021-06-29-at-11-10-27-AM" border="0"></a>
 
 <h3>Tablet:</h3>
-<a href="https://ibb.co/9yVnsGD"><img src="https://i.ibb.co/p4R2Jn7/Screen-Shot-2021-06-28-at-11-13-52-PM.png" alt="Screen-Shot-2021-06-28-at-11-13-52-PM" border="0"></a>
+<a href="https://ibb.co/Hx9q21J"><img src="https://i.ibb.co/ZYbxJtZ/Screen-Shot-2021-06-29-at-11-10-13-AM.png" alt="Screen-Shot-2021-06-29-at-11-10-13-AM" border="0"></a>
 
 <h3>Desktop:</h3>
-<a href="https://ibb.co/4KHt57M"><img src="https://i.ibb.co/fqsFP2t/Screen-Shot-2021-06-28-at-11-14-12-PM.png" alt="Screen-Shot-2021-06-28-at-11-14-12-PM" border="0"></a>
+<a href="https://ibb.co/PG07LFV"><img src="https://i.ibb.co/b5DS0QG/Screen-Shot-2021-06-29-at-11-10-38-AM.png" alt="Screen-Shot-2021-06-29-at-11-10-38-AM" border="0"></a>
 
 <a href="https://miro.com/app/board/o9J_lFxEZQE=/"> Go to MIRO for details on Wireframes </a>
 
@@ -102,13 +102,13 @@ Wireframes below are Al Chile app interface variations for mobile, tablet, and d
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 29 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|July 30| Project Approval | Incomplete
+|July 30| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 1| Pseudocode / actual code | Incomplete
+|July 1| Initial Clickable Model  | Incomplete
+|July 2| MVP | Incomplete
+|July 6| Presentations | Incomplete
 
 ## Timeframes
 
