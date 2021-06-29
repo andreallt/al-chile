@@ -25,9 +25,16 @@ Wireframes below are Al Chile app interface variations for mobile, tablet, and d
 <a href="https://ibb.co/bLYdGJB"><img src="https://i.ibb.co/ftZ0Tvp/Component-Hierarchy.png" alt="Component-Hierarchy" border="0"></a>
 
 ## API and Data Sample
-*WIP*
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
+   {
+            "id": "rec9RdU8RQPBB96ld",
+            "fields": {
+                "name": "Trinidad Scorpion",
+                "specie": "Capsicum Annuum",
+                "origin": "USA",
+                "shu": "1,200,000 – 2,009,000"
+            },
+            "createdTime": "2021-06-29T13:36:00.000Z"
+        },
 ### MVP/PostMVP
 
 #### MVP 
