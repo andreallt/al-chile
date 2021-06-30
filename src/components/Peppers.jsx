@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import Heat from './Heat';
 
-function Sauce(props){
-const { sauce, peppers, shu, hotLevels, image, pairing } = props.hotSauce.fields;
+function Peppers(props){
+const { name, origin, shu, specie, image,} = props.hotPepper.fields;
 const [showMore, setShowMore] = useState(false);
 
 function toggle() {
@@ -12,24 +11,19 @@ function toggle() {
 
   return(
     <article>
-    <Heat hotLevels={hotLevels} />
-    <h2 style={{
-        margin: "0",
-        fontFamily: "Red Hat Text, sans-serif",
-        textAlign: "center",
-       }}>{sauce}</h2>
+    <h2>{name}</h2>
     <img onClick={toggle}
-      src={image} alt={sauce}/>
+      src={image} alt={name}/>
     
     {showMore === true ?(
     <section className="info-box">
     <div className="info">
-    <h3>Great on:</h3>
-    <p>{pairing}</p>
+    <h3>origin</h3>
+    <p>{origin}</p>
     <h3>Scoville Heat Units:</h3>
     <p>{shu}</p>
-    <h3>Peppers:</h3>
-    <p>{peppers}</p>
+    <h3>specie</h3>
+    <p>{specie}</p>
     </div> 
     </section>):(""
       )}
@@ -44,4 +38,4 @@ function toggle() {
   )
 }
 
-export default Sauce;
+export default Peppers;

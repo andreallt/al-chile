@@ -12,7 +12,7 @@ return(
           }}
          to="/">Al Chile</Link>
 
-  <Link style={{
+  <Link style = {{
           textDecoration: "none",
           color: "white",
           fontFamily: "Nunito, sans-serif",

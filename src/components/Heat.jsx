@@ -3,7 +3,7 @@ function Heat(props){
 let heat = "";
   //for loop from 0 to rating add broke hearts
 for(let i = 0; i < props.hotLevels; i+= 1){
-  heat += ' 🌶️  ';
+  heat += ' 🔥 ';
 }
   //render broken hearts
 return(

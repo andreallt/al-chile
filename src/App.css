@@ -66,6 +66,15 @@ form{
   padding: 20px;
 }
 
+.hotLevels{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
 label{
     margin: 10px 0;
     font-family: 'Nunito', sans-serif;
@@ -87,4 +96,8 @@ button{
   font-size: 15px;
   margin: 5px;
   padding: 7px;
+}
+
+button:hover{
+  background-color: rgb(187, 23, 23);
 }

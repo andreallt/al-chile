@@ -69,8 +69,11 @@ function Form(props) {
       required
       value={pairing} onChange={(e) => setPairing (e.target.value)}></textarea>
 
-      <label htmlFor="hotLevels">Hot Levels:</label>
+      <div className="hotLevels">
+      <label htmlFor="hotLevels" style={{ margin: "0",}}>Heat Levels:</label>
+      <p style={{ margin: "0",}}> (1 to 5) </p>
       <input type="range" id="hotLevels"  min={1} max={5} value={hotLevels} onChange={(e) => setHotLevels(e.target.valueAsNumber)}/>
+      </div>
 
       <button type="submit"> Add Heat </button>
     </form>
