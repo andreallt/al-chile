@@ -79,7 +79,7 @@ function App() {
             <p className="hot-sauce">   Due to the large and changing number of cultivars,
             and the variation of cultivar names in different regions there is an estimated 
             50,000 pepper varieties. <br/> HERE ARE A FEW: </p>
-            <hr/>   
+            <br/> <hr/>
 
               {hotPeppers.map((hotPepper) => (
                 <Peppers key={hotPepper.id} hotPepper={hotPepper} setToggleFetch={setToggleFetch}/> ))}    

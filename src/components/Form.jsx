@@ -13,19 +13,19 @@ function Form(props) {
   const params = useParams();
   const history = useHistory();
 
-  useEffect(() => {
-   if( params.id && props.hotSauces.length > 0){
-     const sauceToEdit = props.hotSauces.find((hotSauce) => hotSauce.id === params.id);
-     if (sauceToEdit) {
-      setSauce(sauceToEdit.fields.sauce);
-      setPeppers(sauceToEdit.fields.peppers);
-      setShu(sauceToEdit.fields.shu);
-      setHotLevels(sauceToEdit.fields.hotLevels);
-      setImage(sauceToEdit.fields.image);
-      setPairing(sauceToEdit.fields.pairing);
-     }
-    }
-  },[params.id, props.hotSauces])
+  // useEffect(() => {
+  //  if( params.id && props.hotSauces.length > 0){
+  //    const sauceToEdit = props.hotSauces.find((hotSauce) => hotSauce.id === params.id);
+  //    if (sauceToEdit) {
+  //     setSauce(sauceToEdit.fields.sauce);
+  //     setPeppers(sauceToEdit.fields.peppers);
+  //     setShu(sauceToEdit.fields.shu);
+  //     setHotLevels(sauceToEdit.fields.hotLevels);
+  //     setImage(sauceToEdit.fields.image);
+  //     setPairing(sauceToEdit.fields.pairing);
+  //    }
+  //   }
+  // },[params.id, props.hotSauces])
 
 
   const handleSubmit = async (e) => {
@@ -47,7 +47,7 @@ function Form(props) {
     }
    props.setToggleFetch((curr) => !curr);
    setTimeout(()=> {
-   history.push('/');
+   history.push('/hot-sauce');
   }, 500);
   }
 

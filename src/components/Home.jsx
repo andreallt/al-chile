@@ -16,6 +16,7 @@ function toggleShu() {
 
   return(
 <section className="home">
+<p style={{textAlign:"center",}}> If you love all things spicy and hot-sauce, you are in the right place! </p> <br/>
 <h3 >Chili</h3>
 <div className="chile">
 <p style={{
