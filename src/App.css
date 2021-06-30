@@ -45,6 +45,13 @@ h3{
   padding: 0;
 }
 
+hr{
+  background-color: rgba(255, 0, 0, 0.048);
+  height: .25px;
+  width: 95vw;
+  align-content: center;
+}
+
 p{
   font-family: 'Nunito', sans-serif;
   font-size: 14px;
@@ -165,6 +172,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   width: 50vw;
+  margin-top: -20px;
 }
 
 .p-images{

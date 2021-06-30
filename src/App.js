@@ -74,12 +74,17 @@ function App() {
         </main>
       </Route>
 
-      <Route path="/peppers">
+    <Route path="/peppers">
         <main>
-          {hotPeppers.map((hotPepper) => (
-            <Peppers key={hotPepper.id} hotPepper={hotPepper} setToggleFetch={setToggleFetch}/> ))}
-      </main>
-      </Route>
+            <p className="hot-sauce">   Due to the large and changing number of cultivars,
+            and the variation of cultivar names in different regions there is an estimated 
+            50,000 pepper varieties. <br/> HERE ARE A FEW: </p>
+            <hr/>   
+
+              {hotPeppers.map((hotPepper) => (
+                <Peppers key={hotPepper.id} hotPepper={hotPepper} setToggleFetch={setToggleFetch}/> ))}    
+        </main>
+    </Route>
 
       <Route path="/new">
       <Form setToggleFetch={setToggleFetch}/>

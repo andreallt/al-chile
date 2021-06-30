@@ -33,13 +33,7 @@ function toggle() {
     </div> 
     </section>):(""
       )}
-      <hr style={{
-            color: "orange",
-            backgroundColor: "orange",
-            width: "95vw",
-            alignContent: "center",
-            margin: "0",
-        }}/>  
+      <hr/>  
     </article>
   )
 }
