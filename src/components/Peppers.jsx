@@ -10,30 +10,23 @@ function toggle() {
 }
 
   return(
-    <article>
+    <article onClick={toggle}>
+    <section className="peppers">
+    <img className="p-images" src={image} alt={name}/>
     <h2>{name}</h2>
-    <img onClick={toggle}
-      src={image} alt={name}/>
-    
+    </section>
+
     {showMore === true ?(
-    <section className="info-box">
-    <div className="info">
-    <h3>origin</h3>
+    <section className="p-info">
+    <h3>Origin</h3>
     <p>{origin}</p>
-    <h3>Scoville Heat Units:</h3>
+    <h3>SHU</h3>
     <p>{shu}</p>
-    <h3>specie</h3>
+    <h3>Specie</h3>
     <p>{specie}</p>
-    </div> 
     </section>):(""
       )}
-      <hr style={{
-            color: "orange",
-            backgroundColor: "orange",
-            width: "95vw",
-            alignContent: "center",
-            margin: "0",
-        }}/>  
+
     </article>
   )
 }

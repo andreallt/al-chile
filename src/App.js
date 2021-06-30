@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"; 
 import { baseURL, secondURL, config } from './services';
-import { Route } from "react-router-dom";
+import { Route, Link} from "react-router-dom";
 import axios from "axios";
 import Sauce from './components/Sauce';
 import Form from './components/Form';
 import Nav from './components/Nav';
 import Peppers from "./components/Peppers";
+import Home from "./components/Home";
 import './App.css';
 
 function App() {
@@ -37,17 +38,47 @@ function App() {
 
   return (
     <div className="App">
+<header>
+   <Link style={{
+          textDecoration: "none",
+          color: "white",
+          fontFamily: "Red Hat Text, sans-serif",
+          fontWeight: 500,
+          fontSize: 50,
+          }}
+         to="/">Al Chile</Link>
+</header>
 
-    <Nav/>
+    <Nav />
 
-     <Route exact path="/">
+    <Route exact path="/">
+    <Home />
+    </Route>
+
+      <Route path="/hot-sauce">
         <main>
+    
+        <p className="hot-sauce"> Here is a list of the best Hot Sauces from around the world and pairing recommendations.</p>
+        
           {hotSauces.map((hotSauce) => (
             <Sauce key={hotSauce.id} hotSauce={hotSauce} setToggleFetch={setToggleFetch}/> ))}
 
+       <div className="add-sauce">
+        <h3>
+          Can't find your favorite sauce?
+        </h3>
+        <Link to="/new">
+        <button style={{margin: "5px",}}>Add it!</button>
+        </Link>
+        </div>
+        </main>
+      </Route>
+
+      <Route path="/peppers">
+        <main>
           {hotPeppers.map((hotPepper) => (
             <Peppers key={hotPepper.id} hotPepper={hotPepper} setToggleFetch={setToggleFetch}/> ))}
-        </main>
+      </main>
       </Route>
 
       <Route path="/new">

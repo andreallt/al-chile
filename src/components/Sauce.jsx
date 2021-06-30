@@ -11,6 +11,7 @@ function toggle() {
 }
 
   return(
+
     <article>
     <Heat hotLevels={hotLevels} />
     <h2 style={{
@@ -18,8 +19,7 @@ function toggle() {
         fontFamily: "Red Hat Text, sans-serif",
         textAlign: "center",
        }}>{sauce}</h2>
-    <img onClick={toggle}
-      src={image} alt={sauce}/>
+    <img onClick={toggle} src={image} alt={sauce}/>
     
     {showMore === true ?(
     <section className="info-box">
