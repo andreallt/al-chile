@@ -16,6 +16,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 nav{
@@ -53,11 +54,11 @@ p{
 
 
 .add-sauce{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
 }
 
 
@@ -70,7 +71,7 @@ button{
   font-weight: 500;
   font-size: 15px;
   margin: 5px 0;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 button:hover{
@@ -78,6 +79,13 @@ button:hover{
 }
 
 @media only screen and (max-width: 600px) {
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    }
+    
+
 
   article{display: flex;
     align-items: center;

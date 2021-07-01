@@ -58,13 +58,15 @@ h2{
 .sauce-grid{
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0;
     }
 
 .info{
+  width: 70vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 20px ;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -81,12 +83,13 @@ h2{
   font-family: 'Nunito', sans-serif;
   flex-direction: column;
   width: 95vw;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .hot-sauce{
-  width: 90vw;
-  margin: auto;
+  width: 70vw;
+  margin: 20px auto 0;
   text-align: center;
 }
 

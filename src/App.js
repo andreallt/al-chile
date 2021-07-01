@@ -56,18 +56,19 @@ function App() {
 
       <Route path="/hot-sauce">
         <main>
+        <p className="hot-sauce"> Here is a list of the best Hot Sauces from around the world and pairing recommendations.</p>
+        <br/> <hr/>
+
         <div className="add-sauce">
         <h3>
           Can't find your favorite sauce?
         </h3>
         <Link to="/new">
-        <button style={{margin: "5px",}}>Add it!</button>
+        <button>Add it!</button>
         </Link>
         </div>
 
 
-        <p className="hot-sauce"> Here is a list of the best Hot Sauces from around the world and pairing recommendations.</p>
-        <br/> <hr/>
         <section className="sauce-grid">  
           {hotSauces.map((hotSauce) => (
             <Sauce key={hotSauce.id} hotSauce={hotSauce} setToggleFetch={setToggleFetch}/> ))}
