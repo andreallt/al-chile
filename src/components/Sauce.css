@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+.info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px ;
+  padding: 0;
+}
+
+.info-box{
+  width: 100vw;
+  background-color: rgba(206, 203, 203, 0.075);
+  margin: 0;
+  padding: 20px;
+}
+
+.sauce-article{
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  flex-direction: column;
+  width: 95vw;
+  margin: 20px auto;
+}
+
+.hot-sauce{
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}

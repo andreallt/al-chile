@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Heat from './Heat';
+import "./Sauce.css"
 
 function Sauce(props){
 const { sauce, peppers, shu, hotLevels, image, pairing } = props.hotSauce.fields;
@@ -12,7 +13,7 @@ function toggle() {
 
   return(
 
-    <article>
+    <article className="sauce-article">
     <Heat hotLevels={hotLevels} />
     <h2 style={{
         margin: "0",

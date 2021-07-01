@@ -11,7 +11,6 @@ img{
 header {
   background-color: rgb(29, 29, 29);
   color: white;
-  height: 10vh;
   margin: 0 0 10px 0;
   padding: 10px;
   display: flex;
@@ -25,14 +24,7 @@ justify-content: space-evenly;
 margin: 10px 0;
 }
 
-article{
-  display: flex;
-  align-items: center;
-  font-family: 'Nunito', sans-serif;
-  flex-direction: column;
-  width: 95vw;
-  margin: 20px auto;
-}
+
 
 h1{
   font-family: 'Red Hat Text', sans-serif;
@@ -60,86 +52,15 @@ p{
   padding: 0;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-  margin: 10vh auto;
-  width: 80vw;
-}
-
-.home{
-    display: flex;
-    flex-direction: column;
-    width: 85vw;
-    margin: 20px auto;
-}
-
-.home h3 {
-  font-size: 20px;
-  font-family: 'Red Hat Text', sans-serif;
-}
-
-.home h2 {
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
-  font-style: italic;
-  text-align: center;
-}
 
 .add-sauce{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
-.info{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 20px ;
-  padding: 0;
-}
-
-.info-box{
-  width: 100vw;
-  background-color: rgba(206, 203, 203, 0.075);
-  margin: 0;
-  padding: 20px;
-}
-
-.hot-sauce{
-  width: 90vw;
-  margin: auto;
-  text-align: center;
-}
-
-.chile{
-  background-color: rgba(206, 203, 203, 0.075);
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.hotLevels{
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0;
-}
-
-
-label{
-    margin: 10px 0;
-    font-family: 'Nunito', sans-serif;
-
-}
-
-input{
-  font-family: c;
-
-}
 
 button{
   background-color:rgb(29, 29, 29);
@@ -157,31 +78,13 @@ button:hover{
   background-color: rgb(187, 23, 23);
 }
 
-/* Peppers */
+@media only screen and (max-width: 600px) {
 
-.peppers{
-  font-family: "Red Hat Text", sans-serif;
-  display: flex;
-  width: 100vw;
-  flex-direction: row;
-  margin: 0 20px 0;
-  font-size: 12px;
-  align-items: center;
-}
+  article{display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0px auto;}
 
-.p-info{
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  margin-top: -20px;
-}
-
-.p-images{
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }

@@ -1,0 +1,111 @@
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+  width: 80vw;
+  align-items: center;
+}
+
+
+label{
+  align-items: flex-start;
+  margin: 10px 0;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+textarea{
+  width: 50vw;
+}
+
+input{
+  width: 19vw;
+  height: 25px;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.input-div{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotLevels{
+width: 20vw;
+align-self: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 10px 0;
+} 
+
+.add-button{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pairing{
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+/* ******* MOBILE ********* */
+
+@media only screen and (max-width: 600px) {
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 80vw;
+  }
+  
+
+label{
+    margin: 10px 0;
+    font-family: 'Nunito', sans-serif;
+    
+  }
+  
+input{
+    font-family: "Red Hat Text", sans-serif;
+    width: 50vw;
+  }
+
+
+.add-button{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.hotLevels{
+  width: 40vw;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+} 
+
+.input-div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pairing{
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin: 0;
+}
+
+}

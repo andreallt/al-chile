@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from '../services';
+import "./Form.css"
 
 function Form(props) {
   const [sauce, setSauce] = useState ('')
@@ -53,6 +54,7 @@ function Form(props) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className="input-div">
       <label htmlFor="sauce"> Sauce: </label>
       <input id="suace" type="text"
       autoComplete="off"
@@ -60,22 +62,25 @@ function Form(props) {
       value={sauce} onChange={(e) => setSauce(e.target.value)}/>
 
       <label htmlFor="peppers">Peppers: </label>
-      <textarea id="peppers" 
+      <input id="peppers" 
       required
-      value={peppers} onChange={(e) => setPeppers(e.target.value)}></textarea>
-
+      value={peppers} onChange={(e) => setPeppers(e.target.value)}></input>
+      </div>
+      
+      <div className="pairing">
       <label htmlFor="pairing">Pairing: </label>
       <textarea id="pairing" 
       required
       value={pairing} onChange={(e) => setPairing (e.target.value)}></textarea>
-
+      </div>
+      
       <div className="hotLevels">
-      <label htmlFor="hotLevels" style={{ margin: "0",}}>Heat Levels:</label>
+      <label className="hotLevels" htmlFor="hotLevels" style={{ margin: "0",}}>Heat Levels:</label>
       <p style={{ margin: "0",}}> (1 to 5) </p>
-      <input type="range" id="hotLevels"  min={1} max={5} value={hotLevels} onChange={(e) => setHotLevels(e.target.valueAsNumber)}/>
+      <input className="hotLevels" type="range" id="hotLevels"  min={1} max={5} value={hotLevels} onChange={(e) => setHotLevels(e.target.valueAsNumber)}/>
       </div>
 
-      <button type="submit"> Add Heat </button>
+      <button className="add-button" type="submit"> Add Heat </button>
     </form>
   );
 }

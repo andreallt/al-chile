@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Peppers.css';
 
 function Peppers(props){
 const { name, origin, shu, specie, image,} = props.hotPepper.fields;
@@ -10,7 +11,7 @@ function toggle() {
 }
 
   return(
-    <article onClick={toggle}>
+    <article className="p-article" onClick={toggle}>
     <section className="peppers">
     <img className="p-images" src={image} alt={name}/>
     <h2>{name}</h2>

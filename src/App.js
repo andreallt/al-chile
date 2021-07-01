@@ -19,7 +19,6 @@ function App() {
   const getHot = async () => {
     const resp = await axios.get(baseURL, config);
    setHotSauces(resp.data.records)
-   console.log(resp.data.records)
    }
    getHot();
   }, [toggleFetch]);
@@ -76,13 +75,15 @@ function App() {
 
     <Route path="/peppers">
         <main>
-            <p className="hot-sauce">   Due to the large and changing number of cultivars,
+            <p className="hot-p">  Due to the large and changing number of cultivars,
             and the variation of cultivar names in different regions there is an estimated 
             50,000 pepper varieties. <br/> HERE ARE A FEW: </p>
             <br/> <hr/>
 
+             <section className="pepper-grid">    
               {hotPeppers.map((hotPepper) => (
                 <Peppers key={hotPepper.id} hotPepper={hotPepper} setToggleFetch={setToggleFetch}/> ))}    
+               </section>
         </main>
     </Route>
 

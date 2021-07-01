@@ -1,0 +1,72 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 100px auto;
+}
+
+.home h3 {
+font-size: 20px;
+font-family: 'Red Hat Text', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+.chile{
+  background-color: rgba(206, 203, 203, 0.075);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.sub-title{
+  font-weight: 100px;
+  font-style: italic;
+  color: white;
+  margin-top: 0;
+  text-align: left;
+}
+
+p {text-align: left;}
+
+/* ******* MOBILE ********* */
+
+@media only screen and (max-width: 600px) {
+.home{
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin: 20px auto;
+}
+
+.home h3 {
+font-size: 20px;
+font-family: 'Red Hat Text', sans-serif;
+}
+
+.home h2 {
+font-size: 15px;
+font-family: 'Nunito', sans-serif;
+font-style: italic;
+text-align: center;
+}
+
+.chile{
+  background-color: rgba(206, 203, 203, 0.075);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 20px;
+}
+}
