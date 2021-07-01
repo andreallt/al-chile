@@ -33,7 +33,7 @@ input{
 }
 
 .hotLevels{
-width: 20vw;
+width: 10vw;
 align-self: center;
 display: flex;
 flex-direction: column;
