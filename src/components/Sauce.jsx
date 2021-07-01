@@ -14,14 +14,11 @@ function toggle() {
   return(
 
     <article className="sauce-article">
-    <Heat hotLevels={hotLevels} />
-    <h2 style={{
-        margin: "0",
-        fontFamily: "Red Hat Text, sans-serif",
-        textAlign: "center",
-       }}>{sauce}</h2>
     <img onClick={toggle} src={image} alt={sauce}/>
-    
+    <div className="sauce-heat">
+    <Heat hotLevels={hotLevels} />
+    <h2>{sauce}</h2>
+      
     {showMore === true ?(
     <section className="info-box">
     <div className="info">
@@ -32,9 +29,10 @@ function toggle() {
     <h3>Peppers:</h3>
     <p>{peppers}</p>
     </div> 
-    </section>):(""
+    </section>
+    ):(""
       )}
-      <hr/>  
+    </div>
     </article>
   )
 }

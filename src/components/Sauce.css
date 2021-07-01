@@ -1,9 +1,64 @@
 
+.sauce-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0px;
+  width: 90vw;
+  margin: 0 20px;
+  }
+
+.info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px ;
+  width: 30vw;
+}
+
+.info-box{
+  background-color: rgba(206, 203, 203, 0.075);
+  background-color: rgba(206, 203, 203, 0.075);
+  margin: 10px 0;
+  width: 30vw;
+}
 
 
+.sauce-article{
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  width: 45vw;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+.hot-sauce{
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
 
+h2{
+  font-size: 20px;
+  margin: 0;
+  font-family: "Red Hat Text", sans-serif;
+  text-align: left;
+}
 
+.sauce-heat{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ******* MOBILE ********* */
+
+@media only screen and (max-width: 600px) {
+
+.sauce-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
 
 .info{
   display: flex;
@@ -16,7 +71,7 @@
 .info-box{
   width: 100vw;
   background-color: rgba(206, 203, 203, 0.075);
-  margin: 0;
+  margin: 10px 0;
   padding: 20px;
 }
 
@@ -33,4 +88,12 @@
   width: 90vw;
   margin: auto;
   text-align: center;
+}
+
+.sauce-heat {
+  align-items: center;
+}
+
+h2{text-align: center;
+  font-size: 15px;}
 }

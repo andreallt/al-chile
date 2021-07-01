@@ -56,13 +56,7 @@ function App() {
 
       <Route path="/hot-sauce">
         <main>
-    
-        <p className="hot-sauce"> Here is a list of the best Hot Sauces from around the world and pairing recommendations.</p>
-        
-          {hotSauces.map((hotSauce) => (
-            <Sauce key={hotSauce.id} hotSauce={hotSauce} setToggleFetch={setToggleFetch}/> ))}
-
-       <div className="add-sauce">
+        <div className="add-sauce">
         <h3>
           Can't find your favorite sauce?
         </h3>
@@ -70,6 +64,14 @@ function App() {
         <button style={{margin: "5px",}}>Add it!</button>
         </Link>
         </div>
+
+
+        <p className="hot-sauce"> Here is a list of the best Hot Sauces from around the world and pairing recommendations.</p>
+        <br/> <hr/>
+        <section className="sauce-grid">  
+          {hotSauces.map((hotSauce) => (
+            <Sauce key={hotSauce.id} hotSauce={hotSauce} setToggleFetch={setToggleFetch}/> ))}
+        </section>
         </main>
       </Route>
 

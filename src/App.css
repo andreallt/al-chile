@@ -4,7 +4,7 @@ img{
   align-items: center;
   height: 200px;
   display: flex;
-  border-radius: 10px;
+  border-radius: 6px;
   margin:15px;
 }
 
@@ -23,7 +23,6 @@ display: flex;
 justify-content: space-evenly;
 margin: 10px 0;
 }
-
 
 
 h1{
