@@ -25,6 +25,7 @@ h1{
   flex-direction: column;
   border-radius: 4px;
   margin-bottom: 20px;
+  width: 45%;
 }
 
 .sub-title{
@@ -33,6 +34,11 @@ h1{
   color: white;
   margin-top: 0;
   text-align: left;
+}
+
+.home-box{
+  display: flex;
+  justify-content: space-around;
 }
 
 p {text-align: left;}
@@ -64,7 +70,12 @@ text-align: center;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  width: 95%;
 }
+
+.home-box{
+  display: flex;
+  flex-direction: column;}
 
 h1{
   font-size: 20px;

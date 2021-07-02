@@ -19,8 +19,9 @@ function Home() {
         If you love all things spicy and hot-sauce, you are in the right place!
       </h1>
       <br />
-      <h3>Chili</h3>
+      <div className="home-box">
       <div className="chile">
+      <h3>Chili</h3>
         <p className="sub-title">
           🌶️ (From Nahuatl chīlli)
         </p>
@@ -40,14 +41,10 @@ function Home() {
           )}
         </p>
       </div>
-      <h3
-        style={{
-          marginTop: "15px",
-        }}
-      >
+      <div className="chile">
+      <h3>
         Heat Levels
       </h3>
-      <div className="chile">
         <p className="sub-title">
           🔥 The Scoville Scale
         </p>
@@ -65,6 +62,7 @@ function Home() {
             " +"
           )}
         </p>
+      </div>
       </div>
     </section>
   );

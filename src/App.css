@@ -62,7 +62,7 @@ p{
   display: flex;
   flex-direction: row;
   margin-top: 15px;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;}
 
 
