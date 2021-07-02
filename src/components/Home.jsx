@@ -1,18 +1,8 @@
 import { useState } from "react";
+import Toggle from "./Toggle";
 import './Home.css';
 
 function Home() {
-  const [showMore, setShowMore] = useState(false);
-  const [moreShu, setMoreShu] = useState(false);
-
-  function toggleChili() {
-    showMore === false ? setShowMore(true) : setShowMore(false);
-  }
-
-  function toggleShu() {
-    moreShu === false ? setMoreShu(true) : setMoreShu(false);
-  }
-
   return (
     <section className="home">
       <h1>
@@ -25,22 +15,23 @@ function Home() {
         <p className="sub-title">
           🌶️ (From Nahuatl chīlli)
         </p>
-
-        <p onClick={toggleChili}>
+        <Toggle>
+        {({on, toggle}) => (
+        <p onClick={toggle}>
           Berry-fruit of plants from the genus Capsicum which are members of the
           nightshade family, Solanaceae.
-          {showMore === true ? (
-            <p>
+
+         {on && <p>
               Chili peppers are widely used in many cuisines as a spice to add
               pungent heat to dishes. Capsaicin and related compounds known as
               capsaicinoids are the substances giving chili peppers their
               intensity when ingested or applied topically.
-            </p>
-          ) : (
-            " +"
-          )}
-        </p>
-      </div>
+            </p> }
+          </p>
+           )}
+          </Toggle>
+       </div>
+      
       <div className="chile">
       <h3>
         Heat Levels
@@ -48,20 +39,21 @@ function Home() {
         <p className="sub-title">
           🔥 The Scoville Scale
         </p>
-        <p onClick={toggleShu}>
+        <Toggle>
+        {({on, toggle}) => (
+        <p onClick={toggle}>
           Scoville Heat Unit (SHU) were named for scientist Wilbur Scoville in
           1912.
-          {moreShu === true ? (
-            <p>
+      
+          {on && <p>
               The measurements are divided into multiples of 100. Note that 1
               part per 1,000,000 dilutions of water is rated at 1.5 Scoville
               Units. Pure capsaicin, the stuff that makes chili peppers hot, is
               rated between 15 – 16,000,000 Scoville heat units.
-            </p>
-          ) : (
-            " +"
-          )}
-        </p>
+            </p>}
+          </p>
+            )}
+          </Toggle>
       </div>
       </div>
     </section>
