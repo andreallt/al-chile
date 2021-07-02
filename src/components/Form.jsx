@@ -7,7 +7,7 @@ import "./Form.css"
 function Form(props) {
   const [sauce, setSauce] = useState ('')
   const [peppers, setPeppers] = useState('')
-  const [shu, setShu] = useState(1);
+  const [shu, setShu] = useState(100);
   const [hotLevels, setHotLevels] = useState('');
   const [image, setImage] = useState('https://pbs.twimg.com/media/DX5LayzUQAEWyW2.jpg');
   const [pairing, setPairing] = useState('');
@@ -31,12 +31,27 @@ function Form(props) {
         config );
     } else {
     await axios.post(baseURL, {fields: newSauce}, config);
-    }
+    } 
    props.setToggleFetch((curr) => !curr);
    setTimeout(()=> {
    history.push('/hot-sauce');
   }, 500);
   }
+
+  const newShu = (shu) => {
+    if (hotLevels >= 5){
+      setShu(1500000) 
+    }else if (hotLevels === 4){
+      setShu(500000) 
+    }else if (hotLevels === 3){
+      setShu(100000)
+    }else if (hotLevels === 2){
+      setShu(50000)
+    }else if (hotLevels === 1){
+      setShu(-2000)
+    }
+  }
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -58,16 +73,16 @@ function Form(props) {
       <label htmlFor="pairing">Pairing: </label>
       <textarea id="pairing" 
       required min={1} max={100}
-      value={pairing} onChange={(e) => setPairing (e.target.value)}></textarea>
+      value={pairing} onChange={(e) => setPairing(e.target.value)}></textarea>
       </div>
       
       <div className="hotLevels">
       <label className="hotLevels" htmlFor="hotLevels" style={{ margin: "0",}}>Heat Levels:</label>
       <p style={{ margin: "0",}}> (1 to 5) </p>
-      <input className="hotLevels" type="range" id="hotLevels"  min={1} max={5} value={hotLevels} onChange={(e) => setHotLevels(e.target.valueAsNumber)}/>
+      <input className="hotLevels" type="range" id="hotLevels"  min={1} max={5} value={hotLevels} onChange={(e) => setHotLevels(e.target.valueAsNumber)} />
       </div>
 
-      <button className="add-button" type="submit"> Add Heat </button>
+      <button value={shu} onClick={newShu} className="add-button" type="submit"> Add Heat </button>
     </form>
   );
 }

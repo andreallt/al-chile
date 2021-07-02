@@ -28,7 +28,6 @@ function App() {
     const getPeppers = async () => {
       const resp = await axios.get(secondURL, config);
      setHotPeppers(resp.data.records)
-     console.log(resp.data.records)
      }
      getPeppers();
     }, [toggleFetch]);
