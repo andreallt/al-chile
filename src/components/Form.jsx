@@ -9,24 +9,10 @@ function Form(props) {
   const [peppers, setPeppers] = useState('')
   const [shu, setShu] = useState(1);
   const [hotLevels, setHotLevels] = useState('');
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState('https://pbs.twimg.com/media/DX5LayzUQAEWyW2.jpg');
   const [pairing, setPairing] = useState('');
   const params = useParams();
   const history = useHistory();
-
-  // useEffect(() => {
-  //  if( params.id && props.hotSauces.length > 0){
-  //    const sauceToEdit = props.hotSauces.find((hotSauce) => hotSauce.id === params.id);
-  //    if (sauceToEdit) {
-  //     setSauce(sauceToEdit.fields.sauce);
-  //     setPeppers(sauceToEdit.fields.peppers);
-  //     setShu(sauceToEdit.fields.shu);
-  //     setHotLevels(sauceToEdit.fields.hotLevels);
-  //     setImage(sauceToEdit.fields.image);
-  //     setPairing(sauceToEdit.fields.pairing);
-  //    }
-  //   }
-  // },[params.id, props.hotSauces])
 
 
   const handleSubmit = async (e) => {
@@ -71,7 +57,7 @@ function Form(props) {
       <div className="pairing">
       <label htmlFor="pairing">Pairing: </label>
       <textarea id="pairing" 
-      required
+      required min={1} max={100}
       value={pairing} onChange={(e) => setPairing (e.target.value)}></textarea>
       </div>
       
