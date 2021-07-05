@@ -1,4 +1,3 @@
-import { FLOWBASEANNOTATION_TYPES } from "@babel/types";
 import { Component } from "react";
 
 class Toggle extends Component {

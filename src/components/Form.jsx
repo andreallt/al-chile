@@ -35,7 +35,7 @@ function Form(props) {
    props.setToggleFetch((curr) => !curr);
    setTimeout(()=> {
    history.push('/hot-sauce');
-  }, 500);
+  }, 700);
   }
 
   const newShu = (shu) => {

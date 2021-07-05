@@ -7,7 +7,6 @@ import Form from './components/Form';
 import Nav from './components/Nav';
 import Peppers from "./components/Peppers";
 import Home from "./components/Home";
-import Toggle from "./components/Toggle";
 import './App.css';
 
 function App() {
