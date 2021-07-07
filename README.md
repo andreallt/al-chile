@@ -77,12 +77,12 @@ Wireframes below are Al Chile app interface variations for mobile, tablet, and d
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 29 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|July 30| Project Approval | Incomplete
-|July 30| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 1| Pseudocode / actual code | Incomplete
-|July 1| Initial Clickable Model  | Incomplete
-|July 2| MVP | Incomplete
-|July 6| Presentations | Incomplete
+|July 30| Project Approval | Complete
+|July 30| Core Application Structure (HTML, CSS, etc.) | Complete
+|July 1| Pseudocode / actual code | Complete
+|July 1| Initial Clickable Model  | Complete
+|July 2| MVP | Complete
+|July 6| Presentations | Complete
 
 ## Timeframes
 
