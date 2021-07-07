@@ -19,7 +19,7 @@ header {
   width: 100vw;
 }
 
-head:hover{
+header:hover{
   background-color: rgb(187, 23, 23);
 }
 
@@ -82,6 +82,36 @@ button:hover{
   background-color: rgb(187, 23, 23);
 }
 
+.button{
+  text-decoration: none;
+  background-color:rgb(29, 29, 29);
+  color:white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px 30px;
+}
+
+.button:hover{
+  background-color: rgb(187, 23, 23);
+}
+
+.active{  text-decoration: none;
+  background-color:rgb(138, 10, 10);
+  color:white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px 30px;
+}
+
+
 @media only screen and (max-width: 600px) {
   nav{
     display: flex;
@@ -122,6 +152,5 @@ h3{
       font-size: 14px;
       padding: 0;
     }
-    
 
 }

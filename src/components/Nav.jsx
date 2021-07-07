@@ -1,31 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Nav (){
-return(
-<nav>
-<Link style = {{
-          textDecoration: "none",
-          color: "white",
-          fontFamily: "Nunito, sans-serif",
-          fontWeight: 100,
-          fontSize: 10,
-          fontStyle: "italic",
-          }}
-          to="/hot-sauce">
-<button> Hot Sauce </button> </Link>
+function Nav() {
+  return (
+    <nav>
+      <NavLink className="button" activeClassName="active" to="/hot-sauce">
+        Hot Sauce
+      </NavLink>
 
-<Link style = {{
-          textDecoration: "none",
-          color: "white",
-          fontFamily: "Nunito, sans-serif",
-          fontWeight: 100,
-          fontSize: 10,
-          fontStyle: "italic",
-          }}
-          to="/peppers">
-<button> Peppers </button> </Link>
-
-</nav>
-)}
+      <NavLink className="button" activeClassName="active" to="/peppers">
+        Peppers
+      </NavLink>
+    </nav>
+  );
+}
 
 export default Nav;

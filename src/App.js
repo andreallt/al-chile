@@ -51,6 +51,10 @@ function App() {
 
     <Route exact path="/">
     <Home />
+    <div className="filter-sauce">  
+       {hotSauces.filter(hotSauce => hotSauce.peppers === "Habanero").map(hotSauce=> (
+            <Sauce hotSauce={hotSauce}/> ))}
+        </div>
     </Route>
 
       <Route path="/hot-sauce">
@@ -92,6 +96,7 @@ function App() {
       <Route path="/new">
       <Form setToggleFetch={setToggleFetch}/>
       </Route>
+
 
     </div>
   );

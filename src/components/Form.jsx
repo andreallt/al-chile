@@ -66,7 +66,6 @@ function Form(props) {
       <input id="peppers" 
       required
       value={peppers} onChange={(e) => setPeppers(e.target.value)}></input>
-
       </div>
       
       <div className="pairing">
